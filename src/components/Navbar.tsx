@@ -23,11 +23,11 @@ export function Navbar() {
   const location = useLocation();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border">
-      <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
-          <span className="text-2xl font-serif font-bold text-primary">Homies</span>
-          <span className="text-sm text-muted-foreground">Restro</span>
+    <header className="fixed top-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-xl border-b border-border/50 shadow-sm">
+      <nav className="container mx-auto px-4 h-18 flex items-center justify-between">
+        <Link to="/" className="flex items-center gap-2 group">
+          <span className="text-2xl font-serif font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent group-hover:from-primary/80 group-hover:to-primary transition-all">Homies</span>
+          <span className="text-sm text-muted-foreground font-medium">Restro</span>
         </Link>
 
         {/* Desktop Nav */}
