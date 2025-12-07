@@ -17,14 +17,14 @@ const Menu = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <span className="text-sm font-medium text-primary uppercase tracking-wider">
-            Our Menu
+            Hamara Menu
           </span>
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mt-2">
-            Delicious Offerings
+            Swaadisht Vyanjan
           </h1>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            From appetizing starters to decadent desserts, discover dishes crafted with love 
-            and the finest ingredients.
+            From aromatic starters to rich curries and sweet mithai, discover authentic 
+            Indian dishes crafted with love and traditional recipes.
           </p>
         </div>
 
@@ -54,7 +54,7 @@ const Menu = () => {
 
         {filteredItems.length === 0 && (
           <p className="text-center text-muted-foreground py-12">
-            No dishes found in this category.
+            Is category mein koi dish nahi mili.
           </p>
         )}
       </div>
