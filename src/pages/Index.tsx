@@ -17,17 +17,17 @@ const Index = () => {
   return (
     <>
       {activeOrder && (
-        <div className="bg-primary/10 border-b border-primary/20 sticky top-16 z-40">
+        <div className="bg-primary border-b border-primary/80 relative z-50">
           <div className="container mx-auto px-4 py-3">
             <Link 
               to={`/track/${activeOrder.id}`}
-              className="flex items-center justify-center gap-3 text-sm hover:opacity-80 transition-opacity"
+              className="flex items-center justify-center gap-3 text-sm hover:opacity-90 transition-opacity"
             >
-              <Truck className="w-4 h-4 text-primary animate-pulse" />
-              <span className="text-foreground">
-                Your order <span className="font-semibold text-primary">#{activeOrder.id}</span> is {activeOrder.status.replace('_', ' ')}
+              <Truck className="w-4 h-4 text-primary-foreground animate-pulse" />
+              <span className="text-primary-foreground">
+                Your order <span className="font-semibold">#{activeOrder.id}</span> is {activeOrder.status.replace('_', ' ')}
               </span>
-              <span className="text-primary font-medium underline underline-offset-2">Track Order →</span>
+              <span className="text-primary-foreground font-medium underline underline-offset-2">Track Order →</span>
             </Link>
           </div>
         </div>
