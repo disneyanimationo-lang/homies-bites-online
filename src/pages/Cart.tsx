@@ -4,9 +4,11 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { useCart } from '@/context/CartContext';
+import { useUser } from '@/context/UserContext';
 
 const Cart = () => {
   const { items, updateQuantity, removeFromCart, totalPrice } = useCart();
+  const { isLoggedIn } = useUser();
 
   const deliveryFee = 49;
   const tax = totalPrice * 0.05;
@@ -123,7 +125,7 @@ const Cart = () => {
                 </div>
 
                 <Button asChild className="w-full" size="lg">
-                  <Link to="/checkout">Proceed to Checkout</Link>
+                  <Link to={isLoggedIn ? "/checkout" : "/auth"}>Proceed to Checkout</Link>
                 </Button>
                 
                 <p className="text-xs text-muted-foreground text-center mt-4">
