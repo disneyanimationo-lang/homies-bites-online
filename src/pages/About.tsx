@@ -2,25 +2,38 @@ import { ChefHat, Leaf, Heart, Users, Award, Clock } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import galleryInterior from '@/assets/gallery-interior.jpg';
 import galleryChef from '@/assets/gallery-chef.jpg';
-
-const values = [
-  { icon: Leaf, title: 'Taaza Masale', description: 'We use fresh hand-ground spices sourced from Kerala and Kashmir daily.' },
-  { icon: Heart, title: 'Dil Se Bana', description: 'Every dish is prepared with love, just like Maa ke haath ka khana.' },
-  { icon: Users, title: 'Daadi-Naani Ki Recipes', description: 'Authentic recipes passed down through four generations.' },
-  { icon: Award, title: 'Award Winning', description: 'Best North Indian Restaurant - Times Food Awards 2023.' },
-  { icon: ChefHat, title: 'Master Chefs', description: 'Our chefs trained in the royal kitchens of Lucknow and Hyderabad.' },
-  { icon: Clock, title: 'Quick Service', description: 'Delicious food served hot and fresh, no long waits.' }
-];
-
+const values = [{
+  icon: Leaf,
+  title: 'Taaza Masale',
+  description: 'We use fresh hand-ground spices sourced from Kerala and Kashmir daily.'
+}, {
+  icon: Heart,
+  title: 'Dil Se Bana',
+  description: 'Every dish is prepared with love, just like Maa ke haath ka khana.'
+}, {
+  icon: Users,
+  title: 'Daadi-Naani Ki Recipes',
+  description: 'Authentic recipes passed down through four generations.'
+}, {
+  icon: Award,
+  title: 'Award Winning',
+  description: 'Best North Indian Restaurant - Times Food Awards 2023.'
+}, {
+  icon: ChefHat,
+  title: 'Master Chefs',
+  description: 'Our chefs trained in the royal kitchens of Lucknow and Hyderabad.'
+}, {
+  icon: Clock,
+  title: 'Quick Service',
+  description: 'Delicious food served hot and fresh, no long waits.'
+}];
 const About = () => {
-  return (
-    <main className="pt-24 pb-16">
+  return <main className="pt-24 pb-16">
       {/* Hero Section */}
       <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${galleryInterior})` }}
-        >
+        <div className="absolute inset-0 bg-cover bg-center" style={{
+        backgroundImage: `url(${galleryInterior})`
+      }}>
           <div className="absolute inset-0 bg-foreground/70" />
         </div>
         <div className="relative text-center px-4">
@@ -45,11 +58,7 @@ const About = () => {
                 From Our Family to Yours
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
-                <p>
-                  Homies Restro ki shuruat 1999 mein Sharma Parivaar ne ki thi. Humare founders, 
-                  Shri Ramesh Sharma aur Shrimati Sunita Sharma, apni Daadi-Naani ki recipes ko 
-                  duniya ke saath share karna chahte the.
-                </p>
+                <p>Homies Restro ki shuruat 1999 mein Sharma Parivaar ne ki thi. Humare founders, Shrihari,Prem aur Subash, apni Daadi-Naani ki recipes ko duniya ke saath share karna chahte the.</p>
                 <p>
                   What started as a small dhaba in Bandra has now become Mumbai's beloved destination 
                   for authentic North Indian cuisine. Our signature Butter Chicken, Dal Makhani, and 
@@ -63,11 +72,7 @@ const About = () => {
               </div>
             </div>
             <div>
-              <img 
-                src={galleryChef} 
-                alt="Chef Ramesh preparing authentic Indian cuisine" 
-                className="w-full rounded-lg shadow-xl"
-              />
+              <img src={galleryChef} alt="Chef Ramesh preparing authentic Indian cuisine" className="w-full rounded-lg shadow-xl" />
             </div>
           </div>
         </div>
@@ -86,8 +91,11 @@ const About = () => {
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {values.map(({ icon: Icon, title, description }) => (
-              <Card key={title} className="bg-background">
+            {values.map(({
+            icon: Icon,
+            title,
+            description
+          }) => <Card key={title} className="bg-background">
                 <CardContent className="p-6">
                   <div className="p-3 bg-accent rounded-lg w-fit mb-4">
                     <Icon className="h-6 w-6 text-accent-foreground" />
@@ -95,8 +103,7 @@ const About = () => {
                   <h3 className="font-semibold text-lg text-card-foreground mb-2">{title}</h3>
                   <p className="text-muted-foreground">{description}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -119,12 +126,10 @@ const About = () => {
               "Hum sirf khana nahi banate—hum yaadein banate hain. Har dish mein humara pyaar 
               aur parampara jhalkti hai. Aapka har visit humari khushi hai."
             </p>
-            <p className="mt-4 font-semibold text-foreground">— Sunita Sharma, Founder</p>
+            <p className="mt-4 font-semibold text-foreground">— Prem, Founder</p>
           </div>
         </div>
       </section>
-    </main>
-  );
+    </main>;
 };
-
 export default About;
