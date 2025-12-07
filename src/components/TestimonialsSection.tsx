@@ -4,23 +4,23 @@ import { Card, CardContent } from '@/components/ui/card';
 const testimonials = [
   {
     id: 1,
-    name: 'Sarah Johnson',
+    name: 'Priya Sharma',
     role: 'Food Blogger',
-    content: 'Homies Restro has become my go-to spot for comfort food. The burger is absolutely divine, and the atmosphere is so welcoming!',
+    content: 'Homies Restro ka Butter Chicken aur Dal Makhani ekdum authentic hai! Bilkul ghar jaisa swaad. Mumbai mein best Indian food yahi milta hai.',
     rating: 5
   },
   {
     id: 2,
-    name: 'Michael Chen',
+    name: 'Rajesh Patel',
     role: 'Regular Customer',
-    content: 'I\'ve been coming here for 3 years now. The consistency in quality and service is remarkable. It truly feels like eating at home.',
+    content: 'Main 3 saal se yahan aa raha hoon. Biryani ka taste hamesha consistent rehta hai. Staff bhi bahut friendly hai. Highly recommended!',
     rating: 5
   },
   {
     id: 3,
-    name: 'Emily Rodriguez',
-    role: 'Local Guide',
-    content: 'The salmon here is the best in town! Fresh, flavorful, and perfectly cooked every time. Highly recommend for special occasions.',
+    name: 'Ananya Desai',
+    role: 'Zomato Elite',
+    content: 'Paneer Tikka aur Garlic Naan ka combination zabardast hai! Family dinners ke liye perfect jagah. Ambiance bhi bahut achha hai.',
     rating: 5
   }
 ];
@@ -31,11 +31,12 @@ export function TestimonialsSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <span className="text-sm font-medium text-primary uppercase tracking-wider">
-            Testimonials
+            Customer Reviews
           </span>
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mt-2">
-            What Our Guests Say
+            Hamare Mehman Kya Kehte Hain
           </h2>
+          <p className="text-muted-foreground mt-2">What Our Guests Say</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">

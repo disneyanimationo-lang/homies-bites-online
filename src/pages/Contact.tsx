@@ -7,10 +7,10 @@ import { Card, CardContent } from '@/components/ui/card';
 import { toast } from '@/hooks/use-toast';
 
 const contactInfo = [
-  { icon: MapPin, title: 'Address', details: ['123 Food Street', 'Downtown, City 12345'] },
-  { icon: Phone, title: 'Phone', details: ['(555) 123-4567', '(555) 987-6543'] },
-  { icon: Mail, title: 'Email', details: ['hello@homiesrestro.com', 'orders@homiesrestro.com'] },
-  { icon: Clock, title: 'Hours', details: ['Mon-Thu: 11am - 10pm', 'Fri-Sat: 11am - 11pm', 'Sun: 10am - 9pm'] }
+  { icon: MapPin, title: 'Address', details: ['42, MG Road, Bandra West', 'Mumbai, Maharashtra 400050'] },
+  { icon: Phone, title: 'Phone', details: ['+91 22 2640 1234', '+91 98765 43210'] },
+  { icon: Mail, title: 'Email', details: ['namaste@homiesrestro.in', 'orders@homiesrestro.in'] },
+  { icon: Clock, title: 'Timings', details: ['Mon-Thu: 11am - 11pm', 'Fri-Sat: 11am - 12am', 'Sun: 10am - 11pm'] }
 ];
 
 const Contact = () => {
@@ -25,7 +25,7 @@ const Contact = () => {
     e.preventDefault();
     toast({
       title: "Message sent!",
-      description: "We'll get back to you as soon as possible.",
+      description: "Dhanyavaad! Hum jaldi aapse sampark karenge.",
     });
     setFormData({ name: '', email: '', phone: '', message: '' });
   };
@@ -40,13 +40,13 @@ const Contact = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <span className="text-sm font-medium text-primary uppercase tracking-wider">
-            Get in Touch
+            Sampark Karein
           </span>
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mt-2">
             Contact Us
           </h1>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Have questions, feedback, or want to make a reservation? We'd love to hear from you.
+            Koi sawaal hai? Table book karna hai? Ya feedback dena hai? Hum sunne ke liye taiyaar hain!
           </p>
         </div>
 
@@ -54,7 +54,7 @@ const Contact = () => {
           {/* Contact Info */}
           <div className="space-y-6">
             <h2 className="text-2xl font-serif font-bold text-foreground mb-6">
-              Visit or Reach Out
+              Miliye Humse
             </h2>
             
             <div className="grid sm:grid-cols-2 gap-4">
@@ -81,8 +81,9 @@ const Contact = () => {
             <div className="bg-muted rounded-lg h-64 flex items-center justify-center">
               <div className="text-center">
                 <MapPin className="h-12 w-12 text-muted-foreground mx-auto mb-2" />
-                <p className="text-muted-foreground">Map View</p>
-                <p className="text-sm text-muted-foreground">123 Food Street, Downtown</p>
+                <p className="text-muted-foreground font-medium">Find Us Here</p>
+                <p className="text-sm text-muted-foreground">42, MG Road, Bandra West, Mumbai</p>
+                <p className="text-xs text-muted-foreground mt-1">Near Bandra Station (West Exit)</p>
               </div>
             </div>
           </div>
@@ -98,13 +99,13 @@ const Contact = () => {
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
                     <label className="text-sm font-medium text-card-foreground mb-1 block">
-                      Your Name
+                      Aapka Naam
                     </label>
                     <Input
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="John Doe"
+                      placeholder="Rahul Sharma"
                       required
                     />
                   </div>
@@ -119,33 +120,33 @@ const Contact = () => {
                         type="email"
                         value={formData.email}
                         onChange={handleChange}
-                        placeholder="john@example.com"
+                        placeholder="rahul@example.com"
                         required
                       />
                     </div>
                     <div>
                       <label className="text-sm font-medium text-card-foreground mb-1 block">
-                        Phone (optional)
+                        Phone Number
                       </label>
                       <Input
                         name="phone"
                         type="tel"
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="(555) 123-4567"
+                        placeholder="+91 98765 43210"
                       />
                     </div>
                   </div>
                   
                   <div>
                     <label className="text-sm font-medium text-card-foreground mb-1 block">
-                      Message
+                      Your Message
                     </label>
                     <Textarea
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="How can we help you?"
+                      placeholder="Hum aapki kaise madad kar sakte hain?"
                       rows={5}
                       required
                     />

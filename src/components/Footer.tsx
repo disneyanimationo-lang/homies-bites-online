@@ -12,7 +12,8 @@ export function Footer() {
               Homies Restro
             </h3>
             <p className="text-secondary-foreground/80 text-sm leading-relaxed">
-              Where every meal feels like home. Serving delicious comfort food with love since 2010.
+              Authentic Indian cuisine with the warmth of home. Serving delicious food with love since 1999. 
+              Aao, khana khao, ghar jaisa feel karo!
             </p>
           </div>
 
@@ -21,7 +22,7 @@ export function Footer() {
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <div className="flex flex-col gap-2">
               <Link to="/menu" className="text-sm text-secondary-foreground/80 hover:text-primary-foreground transition-colors">
-                Our Menu
+                Menu
               </Link>
               <Link to="/about" className="text-sm text-secondary-foreground/80 hover:text-primary-foreground transition-colors">
                 About Us
@@ -37,36 +38,36 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-semibold mb-4">Contact Us</h4>
+            <h4 className="font-semibold mb-4">Sampark Karein</h4>
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-2 text-sm text-secondary-foreground/80">
                 <MapPin className="h-4 w-4" />
-                <span>123 Food Street, Downtown</span>
+                <span>42, MG Road, Bandra West, Mumbai 400050</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-secondary-foreground/80">
                 <Phone className="h-4 w-4" />
-                <span>(555) 123-4567</span>
+                <span>+91 22 2640 1234</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-secondary-foreground/80">
                 <Mail className="h-4 w-4" />
-                <span>hello@homiesrestro.com</span>
+                <span>namaste@homiesrestro.in</span>
               </div>
             </div>
           </div>
 
           {/* Hours */}
           <div>
-            <h4 className="font-semibold mb-4">Opening Hours</h4>
+            <h4 className="font-semibold mb-4">Timings</h4>
             <div className="flex flex-col gap-2 text-sm text-secondary-foreground/80">
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />
-                <span>Mon - Thu: 11am - 10pm</span>
+                <span>Mon - Thu: 11am - 11pm</span>
               </div>
               <div className="pl-6">
-                <span>Fri - Sat: 11am - 11pm</span>
+                <span>Fri - Sat: 11am - 12am</span>
               </div>
               <div className="pl-6">
-                <span>Sunday: 10am - 9pm</span>
+                <span>Sunday: 10am - 11pm</span>
               </div>
             </div>
             
@@ -86,7 +87,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-secondary-foreground/20 mt-8 pt-8 text-center text-sm text-secondary-foreground/60">
-          <p>© 2024 Homies Restro. All rights reserved.</p>
+          <p>© 2024 Homies Restro. All rights reserved. Made with ❤️ in India</p>
         </div>
       </div>
     </footer>

@@ -12,14 +12,14 @@ export function FeaturedDishes() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <span className="text-sm font-medium text-primary uppercase tracking-wider">
-            Chef's Picks
+            Chef's Special
           </span>
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mt-2">
-            Popular Dishes
+            Lokpriya Vyanjan
           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Discover our most loved dishes, carefully crafted with the finest ingredients 
-            and served with passion.
+            Discover our most loved dishes, crafted with authentic Indian spices 
+            and served with love. Ye dishes sabki favourite hain!
           </p>
         </div>
 

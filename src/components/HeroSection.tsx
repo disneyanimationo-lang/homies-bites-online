@@ -20,18 +20,18 @@ export function HeroSection() {
           <div className="flex items-center gap-2 mb-6">
             <UtensilsCrossed className="h-5 w-5 text-primary" />
             <span className="text-sm font-medium text-primary uppercase tracking-wider">
-              Welcome to Homies
+              स्वागत है • Welcome to Homies
             </span>
           </div>
           
           <h1 className="text-4xl md:text-6xl font-serif font-bold text-background mb-6 leading-tight">
-            Where Every Meal <br />
-            <span className="text-primary">Feels Like Home</span>
+            Authentic Indian <br />
+            <span className="text-primary">Flavours & Traditions</span>
           </h1>
           
           <p className="text-lg text-background/80 mb-8 max-w-lg">
-            Experience the warmth of home-cooked flavors crafted with love. 
-            Fresh ingredients, secret family recipes, and a cozy atmosphere await you.
+            Experience the rich heritage of Indian cuisine. From aromatic biryanis to creamy curries, 
+            every dish is crafted with love using traditional recipes passed down through generations.
           </p>
           
           <div className="flex flex-wrap gap-4">
