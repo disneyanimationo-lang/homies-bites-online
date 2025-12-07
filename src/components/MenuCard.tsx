@@ -44,7 +44,7 @@ export function MenuCard({ item }: MenuCardProps) {
       <CardContent className="p-5">
         <div className="flex justify-between items-start mb-2">
           <h3 className="font-semibold text-lg text-card-foreground">{item.name}</h3>
-          <span className="text-lg font-bold text-primary">${item.price.toFixed(2)}</span>
+          <span className="text-lg font-bold text-primary">₹{item.price}</span>
         </div>
         <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
           {item.description}
