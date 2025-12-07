@@ -368,7 +368,16 @@ export default function Profile() {
                                   minute: '2-digit'
                                 })}
                               </span>
-                              <span className="font-bold text-primary">₹{order.total.toFixed(0)}</span>
+                              <div className="flex items-center gap-3">
+                                <Button 
+                                  variant="outline" 
+                                  size="sm" 
+                                  onClick={() => navigate(`/track/${order.id}`)}
+                                >
+                                  Track Order
+                                </Button>
+                                <span className="font-bold text-primary">₹{order.total.toFixed(0)}</span>
+                              </div>
                             </div>
                           </div>
                         );
