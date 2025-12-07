@@ -1,9 +1,7 @@
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Twitter } from 'lucide-react';
-
 export function Footer() {
-  return (
-    <footer className="bg-secondary text-secondary-foreground">
+  return <footer className="bg-secondary text-secondary-foreground">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
@@ -42,7 +40,7 @@ export function Footer() {
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-2 text-sm text-secondary-foreground/80">
                 <MapPin className="h-4 w-4" />
-                <span>42, MG Road, Bandra West, Mumbai 400050</span>
+                <span>BvB college road.1st road </span>
               </div>
               <div className="flex items-center gap-2 text-sm text-secondary-foreground/80">
                 <Phone className="h-4 w-4" />
@@ -87,9 +85,11 @@ export function Footer() {
         </div>
 
         <div className="border-t border-secondary-foreground/20 mt-8 pt-8 text-center text-sm text-secondary-foreground/60">
-          <p>© 2024 Homies Restro. All rights reserved. Made with ❤️ in India</p>
+          <p>
+
+
+        </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 }
