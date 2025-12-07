@@ -48,7 +48,7 @@ export default function OrderSuccess() {
               </Link>
             </Button>
             <Button asChild>
-              <Link to="/profile">
+              <Link to={`/track/${orderId}`}>
                 Track Order
                 <ArrowRight className="h-4 w-4 ml-2" />
               </Link>
