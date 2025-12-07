@@ -5,6 +5,9 @@ import { Button } from '@/components/ui/button';
 import { useCart } from '@/context/CartContext';
 import { cn } from '@/lib/utils';
 
+import { useUser } from '@/context/UserContext';
+import { User } from 'lucide-react';
+
 const navLinks = [
   { path: '/', label: 'Home' },
   { path: '/menu', label: 'Menu' },
@@ -16,6 +19,7 @@ const navLinks = [
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { totalItems } = useCart();
+  const { isLoggedIn } = useUser();
   const location = useLocation();
 
   return (
@@ -44,7 +48,12 @@ export function Navbar() {
           ))}
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2">
+          <Link to={isLoggedIn ? '/profile' : '/auth'}>
+            <Button variant="ghost" size="icon">
+              <User className="h-5 w-5" />
+            </Button>
+          </Link>
           <Link to="/cart">
             <Button variant="outline" size="icon" className="relative">
               <ShoppingCart className="h-5 w-5" />
