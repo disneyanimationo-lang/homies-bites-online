@@ -1,9 +1,15 @@
-import dishBurger from '@/assets/dish-burger.jpg';
-import dishPasta from '@/assets/dish-pasta.jpg';
-import dishSalmon from '@/assets/dish-salmon.jpg';
-import dishSalad from '@/assets/dish-salad.jpg';
-import dishDessert from '@/assets/dish-dessert.jpg';
-import dishWings from '@/assets/dish-wings.jpg';
+import dishPaneerTikka from '@/assets/dish-paneer-tikka.jpg';
+import dishMalaiTikka from '@/assets/dish-malai-tikka.jpg';
+import dishSamosa from '@/assets/dish-samosa.jpg';
+import dishButterChicken from '@/assets/dish-butter-chicken.jpg';
+import dishPaneerButter from '@/assets/dish-paneer-butter.jpg';
+import dishBiryani from '@/assets/dish-biryani.jpg';
+import dishDalMakhani from '@/assets/dish-dal-makhani.jpg';
+import dishRoganJosh from '@/assets/dish-rogan-josh.jpg';
+import dishCholeBhature from '@/assets/dish-chole-bhature.jpg';
+import dishNaan from '@/assets/dish-naan.jpg';
+import dishGulabJamun from '@/assets/dish-gulab-jamun.jpg';
+import dishMangoLassi from '@/assets/dish-mango-lassi.jpg';
 
 export interface MenuItem {
   id: string;
@@ -24,7 +30,7 @@ export const menuItems: MenuItem[] = [
     name: 'Paneer Tikka',
     description: 'Marinated cottage cheese cubes grilled to perfection with bell peppers and onions in tandoor',
     price: 299,
-    image: dishWings,
+    image: dishPaneerTikka,
     category: 'starters',
     isPopular: true,
     isVeg: true,
@@ -35,7 +41,7 @@ export const menuItems: MenuItem[] = [
     name: 'Chicken Malai Tikka',
     description: 'Creamy and tender chicken pieces marinated in cheese, cream and mild spices',
     price: 349,
-    image: dishSalad,
+    image: dishMalaiTikka,
     category: 'starters',
     isPopular: true,
     spiceLevel: 'mild'
@@ -45,7 +51,7 @@ export const menuItems: MenuItem[] = [
     name: 'Samosa (2 pcs)',
     description: 'Crispy fried pastry filled with spiced potatoes, peas and aromatic herbs',
     price: 99,
-    image: dishWings,
+    image: dishSamosa,
     category: 'starters',
     isVeg: true,
     spiceLevel: 'medium'
@@ -55,7 +61,7 @@ export const menuItems: MenuItem[] = [
     name: 'Dahi Kebab',
     description: 'Soft hung curd patties stuffed with nuts and raisins, shallow fried golden',
     price: 279,
-    image: dishSalad,
+    image: dishPaneerTikka,
     category: 'starters',
     isVeg: true,
     spiceLevel: 'mild'
@@ -65,7 +71,7 @@ export const menuItems: MenuItem[] = [
     name: 'Mutton Seekh Kebab',
     description: 'Minced mutton mixed with aromatic spices, skewered and grilled in tandoor',
     price: 399,
-    image: dishWings,
+    image: dishMalaiTikka,
     category: 'starters',
     isPopular: true,
     spiceLevel: 'hot'
@@ -75,7 +81,7 @@ export const menuItems: MenuItem[] = [
     name: 'Fish Amritsari',
     description: 'Boneless fish fillets coated in spiced gram flour batter and deep fried',
     price: 379,
-    image: dishSalmon,
+    image: dishSamosa,
     category: 'starters',
     spiceLevel: 'medium'
   },
@@ -86,7 +92,7 @@ export const menuItems: MenuItem[] = [
     name: 'Butter Chicken',
     description: 'Tender chicken pieces in rich, creamy tomato-butter gravy with kasuri methi',
     price: 399,
-    image: dishBurger,
+    image: dishButterChicken,
     category: 'mains',
     isPopular: true,
     spiceLevel: 'mild'
@@ -96,7 +102,7 @@ export const menuItems: MenuItem[] = [
     name: 'Paneer Butter Masala',
     description: 'Soft paneer cubes simmered in velvety tomato-cashew gravy',
     price: 329,
-    image: dishPasta,
+    image: dishPaneerButter,
     category: 'mains',
     isPopular: true,
     isVeg: true,
@@ -107,7 +113,7 @@ export const menuItems: MenuItem[] = [
     name: 'Chicken Biryani',
     description: 'Fragrant basmati rice layered with spiced chicken, saffron and fried onions',
     price: 349,
-    image: dishBurger,
+    image: dishBiryani,
     category: 'mains',
     isPopular: true,
     spiceLevel: 'medium'
@@ -117,7 +123,7 @@ export const menuItems: MenuItem[] = [
     name: 'Dal Makhani',
     description: 'Black lentils slow-cooked overnight with butter, cream and aromatic spices',
     price: 279,
-    image: dishPasta,
+    image: dishDalMakhani,
     category: 'mains',
     isPopular: true,
     isVeg: true,
@@ -128,7 +134,7 @@ export const menuItems: MenuItem[] = [
     name: 'Mutton Rogan Josh',
     description: 'Kashmiri style tender mutton curry with aromatic spices and yogurt',
     price: 449,
-    image: dishBurger,
+    image: dishRoganJosh,
     category: 'mains',
     isPopular: true,
     spiceLevel: 'hot'
@@ -138,7 +144,7 @@ export const menuItems: MenuItem[] = [
     name: 'Palak Paneer',
     description: 'Fresh cottage cheese cubes in creamy spinach gravy with garlic and cumin',
     price: 299,
-    image: dishPasta,
+    image: dishPaneerButter,
     category: 'mains',
     isVeg: true,
     spiceLevel: 'mild'
@@ -148,7 +154,7 @@ export const menuItems: MenuItem[] = [
     name: 'Chicken Tikka Masala',
     description: 'Grilled chicken tikka pieces in spiced onion-tomato masala gravy',
     price: 379,
-    image: dishBurger,
+    image: dishButterChicken,
     category: 'mains',
     spiceLevel: 'medium'
   },
@@ -157,7 +163,7 @@ export const menuItems: MenuItem[] = [
     name: 'Veg Hyderabadi Biryani',
     description: 'Aromatic basmati rice cooked with mixed vegetables and Hyderabadi spices',
     price: 299,
-    image: dishPasta,
+    image: dishBiryani,
     category: 'mains',
     isVeg: true,
     spiceLevel: 'medium'
@@ -167,7 +173,7 @@ export const menuItems: MenuItem[] = [
     name: 'Fish Curry (Goan)',
     description: 'Fresh fish cooked in tangy coconut and kokum based Goan curry',
     price: 429,
-    image: dishSalmon,
+    image: dishRoganJosh,
     category: 'mains',
     spiceLevel: 'hot'
   },
@@ -176,7 +182,7 @@ export const menuItems: MenuItem[] = [
     name: 'Kadhai Paneer',
     description: 'Paneer and bell peppers in spicy kadhai masala with fresh coriander',
     price: 319,
-    image: dishPasta,
+    image: dishPaneerButter,
     category: 'mains',
     isVeg: true,
     spiceLevel: 'hot'
@@ -186,7 +192,7 @@ export const menuItems: MenuItem[] = [
     name: 'Lamb Keema',
     description: 'Minced lamb cooked with onions, tomatoes, peas and garam masala',
     price: 399,
-    image: dishBurger,
+    image: dishRoganJosh,
     category: 'mains',
     spiceLevel: 'medium'
   },
@@ -195,7 +201,7 @@ export const menuItems: MenuItem[] = [
     name: 'Chole Bhature',
     description: 'Spicy chickpea curry served with fluffy deep-fried bread',
     price: 249,
-    image: dishPasta,
+    image: dishCholeBhature,
     category: 'mains',
     isVeg: true,
     isPopular: true,
@@ -206,7 +212,7 @@ export const menuItems: MenuItem[] = [
     name: 'Prawn Masala',
     description: 'Juicy prawns cooked in rich onion-tomato masala with coastal spices',
     price: 479,
-    image: dishSalmon,
+    image: dishButterChicken,
     category: 'mains',
     spiceLevel: 'medium'
   },
@@ -215,7 +221,7 @@ export const menuItems: MenuItem[] = [
     name: 'Malai Kofta',
     description: 'Fried paneer-potato dumplings in rich creamy cashew gravy',
     price: 329,
-    image: dishPasta,
+    image: dishPaneerButter,
     category: 'mains',
     isVeg: true,
     spiceLevel: 'mild'
@@ -227,7 +233,7 @@ export const menuItems: MenuItem[] = [
     name: 'Butter Naan',
     description: 'Soft leavened bread baked in tandoor and brushed with butter',
     price: 59,
-    image: dishWings,
+    image: dishNaan,
     category: 'breads',
     isVeg: true
   },
@@ -236,7 +242,7 @@ export const menuItems: MenuItem[] = [
     name: 'Garlic Naan',
     description: 'Tandoor baked naan topped with fresh garlic and coriander',
     price: 79,
-    image: dishWings,
+    image: dishNaan,
     category: 'breads',
     isVeg: true,
     isPopular: true
@@ -246,7 +252,7 @@ export const menuItems: MenuItem[] = [
     name: 'Laccha Paratha',
     description: 'Flaky layered whole wheat bread cooked on tawa with ghee',
     price: 69,
-    image: dishWings,
+    image: dishNaan,
     category: 'breads',
     isVeg: true
   },
@@ -255,7 +261,7 @@ export const menuItems: MenuItem[] = [
     name: 'Stuffed Kulcha',
     description: 'Naan stuffed with spiced potato or paneer filling',
     price: 99,
-    image: dishWings,
+    image: dishNaan,
     category: 'breads',
     isVeg: true
   },
@@ -266,7 +272,7 @@ export const menuItems: MenuItem[] = [
     name: 'Gulab Jamun (2 pcs)',
     description: 'Soft khoya balls deep fried and soaked in rose-cardamom sugar syrup',
     price: 129,
-    image: dishDessert,
+    image: dishGulabJamun,
     category: 'desserts',
     isPopular: true,
     isVeg: true
@@ -276,7 +282,7 @@ export const menuItems: MenuItem[] = [
     name: 'Rasmalai',
     description: 'Soft paneer discs soaked in saffron and cardamom flavored thickened milk',
     price: 149,
-    image: dishDessert,
+    image: dishGulabJamun,
     category: 'desserts',
     isPopular: true,
     isVeg: true
@@ -286,7 +292,7 @@ export const menuItems: MenuItem[] = [
     name: 'Kulfi Falooda',
     description: 'Traditional Indian ice cream with vermicelli, basil seeds and rose syrup',
     price: 169,
-    image: dishDessert,
+    image: dishGulabJamun,
     category: 'desserts',
     isVeg: true
   },
@@ -295,7 +301,7 @@ export const menuItems: MenuItem[] = [
     name: 'Gajar Ka Halwa',
     description: 'Warm grated carrot pudding slow-cooked with milk, ghee and nuts',
     price: 139,
-    image: dishDessert,
+    image: dishGulabJamun,
     category: 'desserts',
     isVeg: true
   },
@@ -304,7 +310,7 @@ export const menuItems: MenuItem[] = [
     name: 'Jalebi with Rabri',
     description: 'Crispy fried spirals soaked in syrup served with thickened sweet milk',
     price: 159,
-    image: dishDessert,
+    image: dishGulabJamun,
     category: 'desserts',
     isVeg: true
   },
@@ -315,7 +321,7 @@ export const menuItems: MenuItem[] = [
     name: 'Masala Chai',
     description: 'Traditional Indian spiced tea brewed with ginger, cardamom and cinnamon',
     price: 59,
-    image: dishSalad,
+    image: dishMangoLassi,
     category: 'beverages',
     isVeg: true
   },
@@ -324,7 +330,7 @@ export const menuItems: MenuItem[] = [
     name: 'Mango Lassi',
     description: 'Creamy yogurt drink blended with fresh mango pulp and cardamom',
     price: 129,
-    image: dishSalad,
+    image: dishMangoLassi,
     category: 'beverages',
     isPopular: true,
     isVeg: true
