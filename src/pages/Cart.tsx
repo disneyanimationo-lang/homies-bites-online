@@ -4,18 +4,13 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { useCart } from '@/context/CartContext';
-import { toast } from '@/hooks/use-toast';
 
 const Cart = () => {
-  const { items, updateQuantity, removeFromCart, clearCart, totalPrice } = useCart();
+  const { items, updateQuantity, removeFromCart, totalPrice } = useCart();
 
-  const handleCheckout = () => {
-    toast({
-      title: "Order placed!",
-      description: "Thank you for your order. We'll have it ready soon!",
-    });
-    clearCart();
-  };
+  const deliveryFee = 49;
+  const tax = totalPrice * 0.05;
+  const grandTotal = totalPrice + deliveryFee + tax;
 
   if (items.length === 0) {
     return (
@@ -44,7 +39,6 @@ const Cart = () => {
   return (
     <main className="pt-24 pb-16">
       <div className="container mx-auto px-4">
-        {/* Header */}
         <div className="mb-8">
           <Link to="/menu" className="inline-flex items-center text-sm text-muted-foreground hover:text-primary mb-4">
             <ArrowLeft className="h-4 w-4 mr-1" />
@@ -54,7 +48,6 @@ const Cart = () => {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
-          {/* Cart Items */}
           <div className="lg:col-span-2 space-y-4">
             {items.map(item => (
               <Card key={item.id} className="bg-card">
@@ -75,9 +68,7 @@ const Cart = () => {
                           <Trash2 className="h-4 w-4" />
                         </button>
                       </div>
-                      <p className="text-primary font-semibold mt-1">
-                        ${item.price.toFixed(2)}
-                      </p>
+                      <p className="text-primary font-semibold mt-1">₹{item.price}</p>
                       
                       <div className="flex items-center gap-3 mt-3">
                         <button
@@ -94,7 +85,7 @@ const Cart = () => {
                           <Plus className="h-4 w-4" />
                         </button>
                         <span className="ml-auto font-semibold text-card-foreground">
-                          ${(item.price * item.quantity).toFixed(2)}
+                          ₹{item.price * item.quantity}
                         </span>
                       </div>
                     </div>
@@ -104,26 +95,23 @@ const Cart = () => {
             ))}
           </div>
 
-          {/* Order Summary */}
           <div>
             <Card className="bg-card sticky top-24">
               <CardContent className="p-6">
-                <h2 className="text-xl font-semibold text-card-foreground mb-4">
-                  Order Summary
-                </h2>
+                <h2 className="text-xl font-semibold text-card-foreground mb-4">Order Summary</h2>
                 
                 <div className="space-y-3">
                   <div className="flex justify-between text-sm">
                     <span className="text-muted-foreground">Subtotal</span>
-                    <span className="text-card-foreground">${totalPrice.toFixed(2)}</span>
+                    <span className="text-card-foreground">₹{totalPrice}</span>
                   </div>
                   <div className="flex justify-between text-sm">
                     <span className="text-muted-foreground">Delivery Fee</span>
-                    <span className="text-card-foreground">$4.99</span>
+                    <span className="text-card-foreground">₹{deliveryFee}</span>
                   </div>
                   <div className="flex justify-between text-sm">
-                    <span className="text-muted-foreground">Tax</span>
-                    <span className="text-card-foreground">${(totalPrice * 0.08).toFixed(2)}</span>
+                    <span className="text-muted-foreground">GST (5%)</span>
+                    <span className="text-card-foreground">₹{tax.toFixed(0)}</span>
                   </div>
                 </div>
                 
@@ -131,13 +119,11 @@ const Cart = () => {
                 
                 <div className="flex justify-between font-semibold text-lg mb-6">
                   <span className="text-card-foreground">Total</span>
-                  <span className="text-primary">
-                    ${(totalPrice + 4.99 + totalPrice * 0.08).toFixed(2)}
-                  </span>
+                  <span className="text-primary">₹{grandTotal.toFixed(0)}</span>
                 </div>
 
-                <Button onClick={handleCheckout} className="w-full" size="lg">
-                  Place Order
+                <Button asChild className="w-full" size="lg">
+                  <Link to="/checkout">Proceed to Checkout</Link>
                 </Button>
                 
                 <p className="text-xs text-muted-foreground text-center mt-4">
