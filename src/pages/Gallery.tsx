@@ -3,23 +3,23 @@ import { X } from 'lucide-react';
 import galleryInterior from '@/assets/gallery-interior.jpg';
 import galleryChef from '@/assets/gallery-chef.jpg';
 import galleryPatio from '@/assets/gallery-patio.jpg';
-import dishBurger from '@/assets/dish-burger.jpg';
-import dishPasta from '@/assets/dish-pasta.jpg';
-import dishSalmon from '@/assets/dish-salmon.jpg';
-import dishSalad from '@/assets/dish-salad.jpg';
-import dishDessert from '@/assets/dish-dessert.jpg';
-import dishWings from '@/assets/dish-wings.jpg';
+import dishPaneerTikka from '@/assets/dish-paneer-tikka.jpg';
+import dishButterChicken from '@/assets/dish-butter-chicken.jpg';
+import dishBiryani from '@/assets/dish-biryani.jpg';
+import dishDalMakhani from '@/assets/dish-dal-makhani.jpg';
+import dishNaan from '@/assets/dish-naan.jpg';
+import dishGulabJamun from '@/assets/dish-gulab-jamun.jpg';
 
 const galleryImages = [
   { src: galleryInterior, alt: 'Restaurant Interior', category: 'venue' },
-  { src: dishBurger, alt: 'Signature Burger', category: 'food' },
-  { src: galleryChef, alt: 'Chef in Action', category: 'kitchen' },
-  { src: dishPasta, alt: 'Italian Pasta', category: 'food' },
-  { src: galleryPatio, alt: 'Outdoor Patio', category: 'venue' },
-  { src: dishSalmon, alt: 'Grilled Salmon', category: 'food' },
-  { src: dishSalad, alt: 'Fresh Salad', category: 'food' },
-  { src: dishDessert, alt: 'Chocolate Dessert', category: 'food' },
-  { src: dishWings, alt: 'Buffalo Wings', category: 'food' }
+  { src: dishButterChicken, alt: 'Butter Chicken', category: 'food' },
+  { src: galleryChef, alt: 'Chef Preparing Tandoori', category: 'kitchen' },
+  { src: dishBiryani, alt: 'Hyderabadi Biryani', category: 'food' },
+  { src: galleryPatio, alt: 'Outdoor Dining', category: 'venue' },
+  { src: dishPaneerTikka, alt: 'Paneer Tikka', category: 'food' },
+  { src: dishDalMakhani, alt: 'Dal Makhani', category: 'food' },
+  { src: dishGulabJamun, alt: 'Gulab Jamun', category: 'food' },
+  { src: dishNaan, alt: 'Garlic Naan', category: 'food' }
 ];
 
 const Gallery = () => {
@@ -31,14 +31,14 @@ const Gallery = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <span className="text-sm font-medium text-primary uppercase tracking-wider">
-            Gallery
+            Tasveerein
           </span>
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mt-2">
             A Visual Feast
           </h1>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Take a peek inside Homies Restro. From our cozy dining spaces to our mouthwatering 
-            dishes, experience the ambiance before you visit.
+            Homies Restro ki ek jhalak dekhein. Hamare cozy dining space se lekar 
+            mouthwatering dishes tak, visit karne se pehle ambiance experience karein.
           </p>
         </div>
 
