@@ -15,9 +15,9 @@ const Index = () => {
   );
 
   return (
-    <main>
+    <>
       {activeOrder && (
-        <div className="bg-primary/10 border-b border-primary/20">
+        <div className="bg-primary/10 border-b border-primary/20 sticky top-16 z-40">
           <div className="container mx-auto px-4 py-3">
             <Link 
               to={`/track/${activeOrder.id}`}
@@ -32,12 +32,14 @@ const Index = () => {
           </div>
         </div>
       )}
-      <HeroSection />
-      <FeaturedDishes />
-      <AboutPreview />
-      <TestimonialsSection />
-      <CTASection />
-    </main>
+      <main>
+        <HeroSection />
+        <FeaturedDishes />
+        <AboutPreview />
+        <TestimonialsSection />
+        <CTASection />
+      </main>
+    </>
   );
 };
 
